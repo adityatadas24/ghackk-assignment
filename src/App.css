@@ -1,0 +1,198 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.app{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding-top: 20px;
+}
+.container-fluid {
+    width: 80% !important;
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+
+button {
+  border-radius: 5px;
+}
+
+/* task */
+
+.task-details h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.task-details p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* view */
+
+.view-container {
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.view-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.view-content {
+  padding: 20px;
+}
+
+.view-row {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.view-row label {
+  width: 200px;
+  font-weight: bold;
+}
+
+.view-row span {
+  flex: 1;
+}
+
+.view-row input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  margin-left: 5px;
+}
+
+.view-footer {
+  text-align: left;
+  padding: 10px;
+}
+
+.view-footer button {
+  margin: 5px;
+  padding: 8px 16px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.view-footer button:hover {
+  background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+  .view-container {
+    width: 100%;
+    padding: 10px;
+  }
+  .view-content {
+    width: 70%;
+  }
+  .view-row label {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
+
+/* table */
+
+
+th {
+    color: white !important;
+    background-color: #2980b9 !important;
+  }
+  
+@media (max-width: 768px) {
+  .table {
+    display: block;
+    width: 100% !important;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .table tbody,
+  .table tr,
+  .table td {
+    display: block;
+    width: 100%;
+  }
+
+  .table td {
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+    border: none;
+  }
+}
+
+
+th,
+td {
+  white-space: nowrap;
+  padding: 8px;
+}
+
+@media (max-width: 768px) {
+  th,
+  td {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .btn {
+    padding: 0.2rem 0.4rem;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  th,
+  td {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1024px) {
+  th,
+  td {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 0.4rem 0.8rem;
+  }
+}
