@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import SearchBar from "../components/SearchBar";
+import SearchBar from "../components/SearchBar.jsx"; 
 import { useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import TaskTable from "../components/TaskTable.jsx";
@@ -59,24 +59,22 @@ const Dashboard = () => {
     };
 
     fetchTasks();
-  }, [initialTasks]);
+  }, []); 
 
   return (
     <div className="container-fluid">
-      <h1 class="text-center bg-primary p-2 text-white">HARDIK TRADERS - CLIENT MANAGEMENT DASHBOARD</h1>
+      <h1 className="text-center bg-primary p-2 text-white">
+        HARDIK TRADERS - CLIENT MANAGEMENT DASHBOARD
+      </h1>
 
       <SearchBar onSearch={handleSearch} />
       <div className="my-4 d-flex justify-content-center align-items-center">
-        <Button
-          className="btn btn-primary "
-          onClick={handleNewJob}
-        >
+        <Button variant="primary" onClick={handleNewJob}>
           New Job Sheet
         </Button>
       </div>
       <div>
-      <TaskTable tasks={tasks} searchQuery={searchQuery} />
-
+        <TaskTable tasks={tasks} searchQuery={searchQuery} />
       </div>
     </div>
   );
