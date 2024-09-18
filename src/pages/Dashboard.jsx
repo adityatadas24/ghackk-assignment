@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import SearchBar from "../components/SearchBar.jsx"; 
 import { useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
-import TaskTable from "../components/TaskTable.jsx";
+import TaskTable from "../components/Tasktable.jsx";
+
 
 const Dashboard = () => {
   const initialTasks = [

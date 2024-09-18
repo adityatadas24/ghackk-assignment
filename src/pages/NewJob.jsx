@@ -69,6 +69,18 @@ const NewJob = () => {
       <h2 className="text-center mb-4 bg-primary p-2 text-white">{id ? 'Edit Job Sheet' : 'Create New Job Sheet'}</h2>
       <form onSubmit={handleSubmit} className="form-group">
         <div className="row mb-3">
+        <div className="col-md-6">
+            <label htmlFor="clientId" className="form-label">Client ID:</label>
+            <input
+              type="text"
+              name="clientId"
+              value={formData.clientId}
+              onChange={handleChange}
+              className="form-control"
+              placeholder="Client ID"
+              required
+            />
+          </div>
           <div className="col-md-6">
             <label htmlFor="clientName" className="form-label">Client Name:</label>
             <input
