@@ -74,9 +74,9 @@ const Dashboard = () => {
           New Job Sheet
         </Button>
       </div>
-      <div>
+     
         <TaskTable tasks={tasks} searchQuery={searchQuery} />
-      </div>
+    
     </div>
   );
 };

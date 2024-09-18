@@ -31,7 +31,7 @@ const TaskTable = ({ tasks, searchQuery }) => {
   };
 
   return (
-    <table className="table table-bordered table-striped">
+    <table className="tbl table table-bordered table-striped w-75">
       <thead className="thead-dark bg-primary">
         <tr className="bg-primary">
           <th>Client ID</th>

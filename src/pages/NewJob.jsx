@@ -65,7 +65,7 @@ const NewJob = () => {
     navigate('/'); 
   };
   return (
-    <div className="container mt-5">
+    <div className="containers mt-5">
       <h2 className="text-center mb-4 bg-primary p-2 text-white">{id ? 'Edit Job Sheet' : 'Create New Job Sheet'}</h2>
       <form onSubmit={handleSubmit} className="form-group">
         <div className="row mb-3">
