@@ -121,11 +121,11 @@ button {
 /* table */
 
 .tbl{
-    width: 70% !important;
+    width: 65% !important;
     font-size: 10px !important;
 }
 th {
-    font-size: 10px !important;
+    font-size: 9px !important;
   
     color: white !important;
     background-color: #2980b9 !important;
@@ -147,7 +147,9 @@ th {
   .table tr,
   .table td {
     display: block;
-    width: 100%;
+    background-color: none !important;
+    width: 100% !important;
+
   }
 
   .table td {
@@ -155,6 +157,9 @@ th {
     padding-left: 50%;
     text-align: left;
     border: none;
+    width: 70% !important;
+    background-color: none !important;
+
   }
 }
 
@@ -170,6 +175,8 @@ td {
   td {
     padding: 6px;
     font-size: 12px;
+    background-color: none !important;
+
   }
 
   .btn {
